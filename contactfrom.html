@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<title> Pharmacy counter</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="contact.css">
+    <script>
+     function ValidateForm() {
+      let x= document.forms["myform"] ["username"].value;
+      let y= document.forms["myform"] ["email"].value; 
+     if(x == "")
+     {
+       alert("Name must be filled out");
+        return false;
+     }
+    if(y == "")
+     {
+       alert("Please enter valid email");
+        return false;
+     }
+    
+  }
+  </script>
+   
+ 
+</head>
+<body>
+   
+<!--------------------navigation section start-----------------------------> 
+    <div class="logo">
+    <img src="logo2.jpeg">
+</div>		
+   <div class="navbar">
+  <a href="index.html"><i class="fa fa-home"></i>Home</a>
+  <a href="about.html"><i class="fa fa-users"></i>About us</a>
+  <a href="login system/register.php"><i class="fa fa-user"></i>Register</a>
+   <a href="contactfrom.html"><i class="fa fa-user-circle-o"></i>Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fa fa-plus-circle"></i>Health Care
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="baby.html"><i class="fa fa-child"></i>baby care</a>
+      <a href="feminine.html"><i class="fa fa-female"></i>feminine Hygiene</a>
+      <a href="vitamin.html"><i class="fas fa-plus-circle"></i>vitamin & Supplements</a>
+      <a href="face care.html"><i class="fa fa-face"></i>FaceWash & Cleansers</a>
+      <a href="homeopathy.html">Homeopathy</a>
+      <a href="hair.html">Hair Care</a>
+    </div>
+   
+  </div>
+  <a href="products.html"><i class="fa fa-plus-circle"></i>Medicine</a>
+ </div>
+</div>
+
+<!--------------------navigation section ends----------------------------->
+
+<!--------------------contact section starts----------------------------->
+    <div class="contact-form">
+        <h1>CONTACT FORM</h1>
+    </div>
+    <div class="contact-us">
+       <form action="save.php" method="post"  name="myform" onSubmit="return ValidateForm()">
+           <input type="text" name="username"   class="form-control" placeholder="Enter First Name"> <br>
+          
+           <input type="email" name="email"  class="form-control" placeholder="Enter Email"> <br>
+           <input type="text" name="mobile"  class="form-control" placeholder="Enter Mobile Number"> <br>
+           
+           <input type="text" name="message"  class="form-control" placeholder="Message"> <br>
+           <button type="submit" class="btn" onclick="openPopup()">submit</button>
+        <div class="popup" id="popup">
+        <img src="tick.png">
+        <h2>Thank You!</h2>
+        <p>Message Sent sucessfully. Thanks!</p>
+        <button type="button" onclick="closePopup()">OK</button>
+       </form>
+    </div>
+
+</section> 
+<!--------------------contact section ends----------------------------->
+
+<br><br><br><br>
+  <!----------------------footer section starts------------------------->
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">products</a>
+            <a href="#Health Care">Health Care</a>
+            <a href="#contact">reviews</a>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +00176485500 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +01234567890 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> xyz@gmail.com </a>
+            <a href="#"> <i class="fas fa-map"></i> chandigarh, india </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            
+        </div>
+
+    </div>
+
+
+
+        <div class="copyright">
+            
+                <center>
+                    <p>Copyright &copy MedicPlus Store. All Rights Reserved. | Contact Us: +91 90000 00000</p>
+                    <p>This website is developed by RuchiPriya</p>
+               </center>
+      </div>
+             
+ <!----footer section ends------>
+ <script>
+let popup = document.getElementById("popup");
+function openPopup(){
+popup.classList.add("open-popup");
+}
+function closePopup(){
+popup.classList.remove("open-popup");
+}
+</script>       
+</body>
+</html>

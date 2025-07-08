@@ -1,0 +1,30 @@
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    
+}
+
+
+.term{
+    margin-top: 5%;
+    padding: 0px 20px;
+    height: 500%;
+    color: black;   
+}
+
+.term h2{
+    
+    text-transform: uppercase;
+    margin-left: 40%;
+    font-size: 40;
+}
+.term h3{
+    text-transform: uppercase;
+    margin-left: 10%;
+    font-size: 30;
+}
+.term p{
+   font-size: 26;
+   margin-left: 10%;
+   margin-right: 10%;
+}

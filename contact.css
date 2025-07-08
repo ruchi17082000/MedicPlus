@@ -1,0 +1,271 @@
+*{
+    padding: 0px ;
+    margin: 0px;
+    font-family:sans-serif ;
+}
+
+body{
+   background-image: url("contact.jpg");
+    background-size: cover;
+    text-align: center;
+}
+
+.logo img{
+  float: left;
+  margin-left: 0px;
+  width: 20%;
+  height: 10%;
+  background: transparent;
+  margin-top: -8%;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: Arial;
+ float: right;
+ margin-top: -7%;
+ margin-right: 5%;
+
+ 
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 15px 10px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: powderblue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  float: none;
+  font-size: 20px;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.contact-form{
+    margin-top: 100px;
+    color: #ff5722;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+.contact-form h1{
+    font-size: 32px;
+}
+
+
+form{
+    margin-top: 50px;
+    transition: all 4s ease-in-out ;
+}
+
+.form-control{
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+
+input{
+    height: 45px;
+}
+
+form .submit{
+    background: #ff5722;
+    border: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+form .submit:hover{
+    background: #f44336;
+    cursor: pointer;
+}
+
+
+
+
+
+ 
+.btn{
+    background: powderblue;
+    border: 0;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 60px;
+    margin-top: 20px;
+}
+.popup{
+   width: 300px;
+   height: 300px;
+   background: #fff;
+   border-radius: 6px;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   transform: translate(-50%,-50%) scale(0.1);
+   text-align: center;
+   padding: 0 -20px -20px;
+   color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+   transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+   width: 100px;
+   margin-top: -50px;
+   border-radius: 50%;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h2{
+  font-size: 38px;
+  font-weight :500;
+  margin: 30px 0 10px;
+}
+.popup button{
+   width: 70%;
+   margin-top: 50px;
+   padding: 10px 0;
+   background: #6fd649;
+   color: #fff;
+   outline: none;
+   font-size: 18px;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+
+
+/* footer section start */
+.footer {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0rem, 0%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+  gap: 0px;
+}
+
+.footer .box-container .box h3 {
+  font-size: 38px;
+  padding: 2% 5%;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  padding: 2% 2%;
+}
+
+.footer .box-container .box a i {
+  color: #219150;
+  padding-right: 5%;
+}
+
+.footer .box-container .box a:hover {
+  color: #219150;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.footer .credit span {
+  color: #219150;
+}
+.footer .copyright p {
+   
+ text-align: center;
+  margin-top: -2%;
+  padding: 1%;
+  padding-top: 2%;
+  font-size: 18px;
+  color: #fff;
+}

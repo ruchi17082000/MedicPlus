@@ -1,0 +1,205 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+background-image: url("contact.jpg");
+    background-size: cover;
+    text-align: center;
+}
+.logo img{
+  float: left;
+  margin-left: 0px;
+  width: 20%;
+  height: 10%;
+  background: transparent;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: Arial;
+ float: right;
+ margin-right: 0%;
+ 
+
+ 
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 15px 10px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: powderblue;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  float: none;
+  font-size: 20px;
+  color: black;
+  padding: 5px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.container{
+     width: 80%; 
+     display: block;
+     margin:auto;
+     padding-top: 100px;
+}
+.content-section{
+     width: 100%; 
+}
+
+.content-section .title{
+    text-tansform: uppercase;
+    font-size: 30px;
+}
+.content-section .title h2{
+    text-tansform: uppercase;
+    font-size: 50px;
+    color: red;
+    margin-left: 0%;
+}
+.content-section .content h3{
+    margin-top: 30px;
+    color: #5d5d5d;
+     margin-left: 5%;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family:  sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* footer section start */
+.footer {
+  background: black;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0rem, 0%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+  gap: 0px;
+}
+
+.footer .box-container .box h3 {
+  font-size: 38px;
+  padding: 2% 5%;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  padding: 2% 2%;
+}
+
+.footer .box-container .box a i {
+  color: #219150;
+  padding-right: 5%;
+}
+
+.footer .box-container .box a:hover {
+  color: #219150;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.footer .credit span {
+  color: #219150;
+}
+.footer .copyright p {
+   
+ text-align: center;
+  margin-top: -2%;
+  padding: 1%;
+  padding-top: 2%;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
